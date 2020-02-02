@@ -31,7 +31,7 @@ If you see this:
 ```
 python: Command not found
 ```
-Then your need to install it yourself :\
+Then your need to install it yourself.
 If it was this:
 ```
 python3: Command not found
