@@ -8,6 +8,7 @@ This is only for Raspberry Pi Computers
 
 ### Wiring
 
+
 | LED Color | Hardware Pin | GPIO |
 |-----------|--------------|------|
 | Red       | 11           | 17   |
@@ -15,6 +16,12 @@ This is only for Raspberry Pi Computers
 | Green     | 15           | 22   |
 
 You can also wire them into a single rgb led!
+
+#### IMPORTANT
+
+In every wire to the - pin, add 220ohm resistor before the wire being passed.
+Not doing this will:
+Not letting the leds light up.
 
 ### Installation
 
@@ -41,7 +48,7 @@ So `python3` is recommended
 
 ## Usage
 
-The filename of the .py files are the country's how traffic lights work
+The filename of the .py files are the country's how their traffic lights work
 
 To run:
 ```
@@ -51,3 +58,7 @@ Or
 ```
 python3 [any .py file here]
 ```
+
+### Hardware Usage
+
+To control the traffic lights, just press the button.
