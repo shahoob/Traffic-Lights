@@ -48,15 +48,13 @@ So `python3` is recommended
 
 ## Usage
 
-The filename of the .py files are the country's how their traffic lights work
-
 To run:
 ```
-python [any .py file here]
+python main.py
 ```
 Or
 ```
-python3 [any .py file here]
+python3 main.py
 ```
 
 ### Hardware Usage
