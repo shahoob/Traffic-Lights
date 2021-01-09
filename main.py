@@ -2,32 +2,32 @@ from gpiozero import LED
 from gpiozero import Button
 from time import sleep
 
-leda = LED(17);
-ledb = LED(27);
-ledc = LED(22);
+red = LED(17);
+yellow = LED(27);
+green = LED(22);
 button = Button(23);
 
 count = 0;
 
 while True:
-    leda.on();
-    ledb.off();
-    ledc.off();
+    red.on();
+    yellow.off();
+    green.off();
     button.wait_for_press();
-    leda.off();
-    ledb.off();
-    ledc.on();
+    red.off();
+    yellow.off();
+    green.on();
     sleep(1);
     button.wait_for_press();
     while (count < 5):
         count = count + 1;
-        ledc.off();
+        green.off();
         sleep(0.5);
-        ledc.on();
+        green.on();
         sleep(0.5);
-    ledc.off();
-    ledb.on();
+    green.off();
+    yellow.on();
     sleep(2);
-    ledb.off();
-    leda.on();
+    yellow.off();
+    red.on();
         
